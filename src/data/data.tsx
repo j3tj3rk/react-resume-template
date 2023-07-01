@@ -9,10 +9,7 @@ import {
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
@@ -69,18 +66,19 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Josh Lea.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a Earth based <strong className="text-stone-100">Penetration Tester</strong>, currently working
+        at <strong className="text-stone-100">Black Lantern Security</strong> where I help clients improve their security posture through offensive
+        security and risk analysis.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        In my free time time, you can catch me reading <strong className="text-stone-100">comic books</strong>,
+        building <strong className="text-stone-100">legos</strong>, or exploring beautiful{' '}
+        <strong className="text-stone-100">City, State and National Parks</strong> with my wife <strong className="text-stone-100">REDACTED</strong>
+        and our dog <strong className="text-stone-100">ALSO-REDACTED</strong>.
       </p>
     </>
   ),
@@ -108,12 +106,12 @@ export const aboutData: About = {
   to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
   in.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'United States, Earth', Icon: MapIcon},
+    {label: 'Age', text: '39', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'United States of America', Icon: FlagIcon},
+    {label: 'Interests', text: 'Motor Sport, Rock Climbing, Information Security', Icon: SparklesIcon},
+    {label: 'Study', text: 'Athens State University', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Black Lantern Security', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -122,71 +120,53 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
+    name: 'Penetration Testing',
     skills: [
       {
-        name: 'English',
+        name: 'OSINT',
         level: 10,
       },
       {
-        name: 'French',
-        level: 4,
+        name: 'Internal Network',
+        level: 8,
       },
       {
-        name: 'Spanish',
+        name: 'External Network',
+        level: 7,
+      },
+      {
+        name: 'Active Directory',
+        level: 7,
+      },
+      {
+        name: 'Web Applications',
+        level: 6,
+      },
+      {
+        name: 'Mobile Applications',
         level: 3,
       },
     ],
   },
   {
-    name: 'Frontend development',
+    name: 'Languages',
     skills: [
       {
-        name: 'React',
+        name: 'Python',
         level: 9,
       },
       {
-        name: 'Typescript',
+        name: 'Ruby',
         level: 7,
       },
       {
         name: 'GraphQL',
         level: 6,
       },
-    ],
-  },
-  {
-    name: 'Backend development',
-    skills: [
       {
-        name: 'Node.js',
-        level: 8,
-      },
-      {
-        name: 'Rust',
-        level: 5,
-      },
-      {
-        name: 'Golang',
-        level: 4,
-      },
-    ],
-  },
-  {
-    name: 'Mobile development',
-    skills: [
-      {
-        name: 'React Native',
-        level: 9,
-      },
-      {
-        name: 'Flutter',
-        level: 4,
-      },
-      {
-        name: 'Swift',
+        name: 'PHP',
         level: 3,
-      },
+      }
     ],
   },
 ];
@@ -249,18 +229,6 @@ export const portfolioItems: PortfolioItem[] = [
     url: 'https://timbaker.me',
     image: porfolioImage9,
   },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage11,
-  },
 ];
 
 /**
@@ -268,40 +236,48 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'October 2016',
+    location: 'Birmingham, AL',
+    title: 'CompTIA Network+',
+    content: <p>CompTIA's Network+ validates the knowledge and skills needed to troubleshoot, configure and manage wired and wireless networks found in companies around the world.</p>,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'June 2018',
+    location: 'Gulf Shores, AL',
+    title: 'CompTIA Security+',
+    content: <p>The CompTIA Security+ exam focuses on today's best practices for risk management and risk mitigation, including more emphasis on the practical and hands-on ability to both identify and address security threats, attacks and vulnerabilities.</p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'January 2022 - Present',
+    location: 'Black Lantern Security',
+    title: 'Penetration Tester',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <ul>
+        <li>Lead penetration tests and red team activities against enterprise environments</li>
+        <li>Creat and deliver reports on vulnerabilities discovered during an assessment, risk management, and overall security program maturity to executive and technical stakeholders</li>
+        <li>Provided detailed remediation and mititgation strategies</li>
+        <li>Develop custom applications to solve operational and technical problems</li>
+        <li>Wild West Hacking Fest - Deadwood 2022 CTF Champions</li>
+      </ul>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'Dec 2017 - Jan 2022',
+    location: 'Birmingham, AL',
+    title: 'Senior End User Services Technician',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Serve as the IT liaison to end users and provide desk side and remote technical assistance to end users 
+        during and after regular business hours due to an emergency, or in support of special business projects and initiatives.
       </p>
+    ),
+    (
+      <ul>
+        <li>Awarded 'IT Spotlight Award' Oct 2019, May 2020, Dec 2021</li>
+      </ul>
     ),
   },
 ];
@@ -313,8 +289,8 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
+      name: 'Cody Martin',
+      text: 'Working with Josh was always an absolute pleasure. His keen eye for detail coupled with a combination of technical and soft skills made him invaluable as a team member and team lead. He regularly handled uneasy clients with grace and professionalism. As a professional, his hunger to continue learning is consistent and it shows in the quality of his work. On a personal note, Josh is a caring and understanding individual who tries to do right by others in all situations. I could not recommend Josh enough as a professional or as a person you would enjoy having in your life.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
     },
     {
@@ -340,23 +316,13 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
-    },
-    {
-      type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
-    },
-    {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: 'j3tj3rk@gmail.com',
+      href: 'mailto:j3tj3rk@gmail.com',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'j3tj3rk',
+      href: 'https://github.com/j3tj3rk',
     },
   ],
 };
@@ -365,9 +331,6 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/tbakerx/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/j3tj3rk'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/joshleasecurity/'},
 ];
